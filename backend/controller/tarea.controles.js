@@ -1,7 +1,6 @@
 const tareaControles={};
 
-const tareaModel= require('../models/archivo');
-const { update } = require('../models/archivo');
+const tareaModel= require('../models/tareas');
 
 
 tareaControles.createTarea = async (req,res)=>{

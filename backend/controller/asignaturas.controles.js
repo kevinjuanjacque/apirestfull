@@ -1,7 +1,7 @@
 const asignaturaControles={};
 
 //se importa los modelos de user
-const asignaturaModel= require('../models/user')
+const asignaturaModel= require('../models/asignatura')
 
 const jwt=require('jsonwebtoken');
 const fs = require('fs');

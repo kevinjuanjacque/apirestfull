@@ -1,7 +1,7 @@
 const express=require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
-const asignatura = require('../controller/user.controles');
+const asignatura = require('../controller/asignaturas.controles');
 const tarea = require('../controller/tarea.controles');
 
 

@@ -3,6 +3,7 @@ const app=express();
 const morgan=require('morgan');
 const { mongoose } = require('./database')
 const jwt = require('jsonwebtoken')
+const path =require('path');
 
 
 const cors= require('cors');
@@ -19,6 +20,7 @@ app.use(express.json());
 
 //routes
 
+app.use(express.static(path.resolve(__dirname,'../public/')))
 
 
 app.use(require('./routes/user.routes'));

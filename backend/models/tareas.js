@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const {Schema} =mongoose;
 
-const filesShema =new Schema({
+const tareas =new Schema({
     IdAsignatura: {type: String, required:true },
     Trabajo: {type: String, required:true},
     Grupo: {type: String, required:true },
@@ -14,4 +14,4 @@ const filesShema =new Schema({
 
 
 
-module.exports=mongoose.model('archivo',filesShema);
+module.exports=mongoose.model('tarea',tareas);
