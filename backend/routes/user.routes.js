@@ -12,7 +12,7 @@ const tarea = require('../controller/tarea.controles');
 
 router.get('/api/Asignaturas',asignatura.obtenerAsignaturas);
 router.post('/api/createAsignatura',asignatura.createAsignatura);
-router.delete('/api/createAsignatura/:id',asignatura.eliminar);
+router.delete('/api/eliminarAsignatura/:id',asignatura.eliminar);
 router.get('/api/Asignaturas/:id',asignatura.buscar);
 
 router.post('/api/createTareas',tarea.createTarea);
