@@ -1,6 +1,6 @@
 const mongoose= require('mongoose');
 
-const URI = 'mongodb://localhost:27017/ASIGNATURAS'
+const URI = "mongodb+srv://admin:Admin2020@bibliotecaicci.ker7x.gcp.mongodb.net/bibliotecaicci?retryWrites=true&w=majority";
 
 mongoose.connect(URI,{
     useNewUrlParser: true,
