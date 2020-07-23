@@ -5,6 +5,7 @@ const asignaturaModel= require('../models/asignatura')
 
 const jwt=require('jsonwebtoken');
 const fs = require('fs');
+const asignatura = require('../models/asignatura');
 
 //Metodo post obtener los usuarios
 asignaturaControles.obtenerAsignaturas = async (req,res)=>{
@@ -42,8 +43,16 @@ asignaturaControles.buscar =  async (req,res) =>{
 }
 
 
-
-//obtener file
+asignaturaControles.crearVarias=async(req,res)=>{
+    const asignaturas=req.body;
+    try {
+        await asignaturaModel.saveAll(asignaturas)
+        res.json('todo bien');
+    } catch (error) {
+        res.json('error');
+    }
+    
+}
 
 
 
