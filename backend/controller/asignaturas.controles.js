@@ -46,7 +46,7 @@ asignaturaControles.buscar =  async (req,res) =>{
 asignaturaControles.crearVarias=async(req,res)=>{
     const asignaturas=req.body;
     try {
-        await asignaturaModel.saveAll(asignaturas)
+        await asignaturaModel.insertMany(asignaturas);
         res.json('todo bien');
     } catch (error) {
         res.json('error');
