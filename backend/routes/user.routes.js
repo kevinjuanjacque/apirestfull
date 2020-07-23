@@ -11,10 +11,10 @@ const tarea = require('../controller/tarea.controles');
 
 
 router.get('/api/Asignaturas',asignatura.obtenerAsignaturas);
-router.post('/api/Asignaturas',asignatura.createAsignatura);
+router.post('/api/createAsignaturas',asignatura.createAsignatura);
 router.delete('/api/Asignaturas/:id',asignatura.eliminar);
 router.get('/api/Asignaturas/:id',asignatura.buscar);
-router.post('api/crearVarias',asignatura.crearVarias);
+router.post('/api/crearVarias',asignatura.crearVarias);
 
 router.post('/api/Tareas',tarea.createTarea);
 router.get('/api/Tareas',tarea.obtenerTareas);
